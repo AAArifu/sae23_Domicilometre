@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domicilometer BUT N&T</title>
+<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">  <link rel="stylesheet" href="home.css">
+</head>
+
+
+
+<body>
+
+  <header class="nav">
+    <div class="logo">
+        <img src="ressources/umlp-logo.png" alt="Logo">
+    </div>
+
+    <div class="right-menu">
+        <div id="burger-menu" class="burger-menu">
+            <a href="home-en.html">Home</a>
+            <a href="Register.html">Registration</a>
+            <a href="reshearch.html">Search</a>
+            <a href="group.html">Group</a>
+
+            <div class="langue">
+                <a href="Home.html" class="flag-btn">
+                    <img src="/ressources/france.jpg" alt="Français">
+                </a>
+
+                <a href="home-en.html" class="flag-btn">
+                    <img src="/ressources/englais.png" alt="English">
+                </a>
+            </div>
+        </div>
+
+        <div class="menu" onclick="toggleMenu()">&#9776;</div>
+    </div>
+</header>
+
+  <main class="hero">
+    <div class="overlay"></div>
+
+    <div class="content">
+      <h1>DOMICILOMETER OF STUDENTS<br>AT BUT N&T</h1>
+      <p>There are currently 45 students in 12 cities</p>
+      <a href="Register.html" class="btn">REGISTER</a>
+    </div>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("burger-menu").classList.toggle("show");
+    }
+</script>
+
+
+  </main>
+
+</body>
+</html>

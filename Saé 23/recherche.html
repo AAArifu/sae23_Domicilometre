@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domicilomètre BUT R&T</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="recherche.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+
+
+<body>
+
+  <header class="nav">
+    <div class="logo">
+        <img src="ressources/umlp-logo.png" alt="Logo">
+    </div>
+
+   <div class="zone-recherche">
+    <div class="barre-recherche">
+        <label for="search">Recherche :</label>
+        <input type="text" id="search" placeholder="Nom ou prénom">
+        <button id="btn-recherche">🔍</button>
+    </div>
+
+    <div class="suggestions" id="suggestions">
+        <ul id="liste-suggestions"></ul>
+    </div>
+</div>
+
+
+    <div class="right-menu">
+        <div id="burger-menu" class="burger-menu">
+            <a href="Home.html">Accueil</a>
+            <a href="inscription.html">Inscription</a>
+            <a href="recherche.html">Recherche</a>
+            <a href="group-fr.html">Groupe</a>
+
+            <div class="langue">
+                <a href="recherche.html" class="flag-btn">
+                    <img src="/ressources/france.jpg" alt="Français">
+                </a>
+
+                <a href="reshearch.html" class="flag-btn">
+                    <img src="/ressources/englais.png" alt="English">
+                </a>
+            </div>
+        </div>
+
+        <div class="menu" onclick="toggleMenu()">&#9776;</div>
+    </div>
+</header>
+
+// Zone d'affichage des informations
+<div class="zone-infos">
+    <div class="bloc-infos perso">
+        <h2>Information personnelle :</h2>
+
+        <div class="champ large" id="email">Email :</div>
+
+        <div class="ligne-double">
+            <div class="champ" id="nom">Nom :</div>
+            <div class="champ" id="prenom">Prénom :</div>
+        </div>
+
+        <div class="champ large" id="ville">Ville :</div>
+
+        <div class="ligne-double">
+            <div class="champ" id="naissance">Lieu de naissance :</div>
+            <div class="champ" id="nationalite">Nationalité :</div>
+        </div>
+
+        <div class="champ large" id="groupe">Numéro de groupe :</div>
+    </div>
+
+    <div class="separateur"></div>
+
+    <div class="bloc-infos ville">
+        <h2>Information de la ville :</h2>
+
+        <div class="champ large" id="code-postal">Code postal :</div>
+
+        <div class="ligne-double">
+            <div class="champ" id="departement">Département :</div>
+            <div class="champ" id="population">Population :</div>
+        </div>
+
+        <div class="ligne-double">
+            <div class="champ" id="densite">Densité :</div>
+            <div class="champ" id="pays">Pays :</div>
+        </div>
+
+        <div class="champ large" id="surface">Surface :</div>
+
+        <div class="ligne-double">
+            <div class="champ" id="longitude">Longitude :</div>
+            <div class="champ" id="altitude-max">Altitude max :</div>
+        </div>
+
+        <div class="ligne-double">
+            <div class="champ" id="latitude">Latitude :</div>
+            <div class="champ" id="altitude-min">Altitude min :</div>
+        </div>
+    </div>
+</div>
+
+
+<div class="bloc-map">
+    <h2>Localisation</h2>
+    <div id="map"></div>
+</div>
+
+
+    <main class="hero">
+        <div class="overlay"></div>
+    
+      
+   
+
+<script>
+    function toggleMenu() {
+        document.getElementById("burger-menu").classList.toggle("show");
+    }
+</script>
+
+<script src="recherche.js"></script>
+
+
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,598 @@
+[
+  {
+    "id": 1,
+    "nom": "Mselque",
+    "prenom": "Yassine",
+    "adresse_principale": "100 route d'Audincourt",
+    "adresse_secondaire": "Agadir",
+    "date_debut_fin_principale": "31 Aout 2025 - indef",
+    "date_debut_fin_secondaire": "",
+    "groupe": 8
+  },
+  {
+    "id": 2,
+    "nom": "Di Léna",
+    "prenom": "Mathis",
+    "adresse_principale": "100 route d'Audincourt (Montbéliard)",
+    "adresse_secondaire": "Lac des Rouges Truites",
+    "date_debut_fin_principale": "31 Aout 2025 - indef",
+    "date_debut_fin_secondaire": "2017 - indef",
+    "groupe": 8
+  },
+  {
+    "id": 3,
+    "nom": "Youla",
+    "prenom": "Stan Jeremie",
+    "adresse_principale": "2 rue henri matisse",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "31 Aout 2025 - indef",
+    "date_debut_fin_secondaire": "2017 - indef",
+    "groupe": 8
+  },
+  {
+    "id": 4,
+    "nom": "Softic",
+    "prenom": "Faris",
+    "adresse_principale": "16B Rue du Tremplin 25500 Morteau",
+    "adresse_secondaire": "40 Rue Georges Clemenceau",
+    "date_debut_fin_principale": "31/07/2014 - indef",
+    "date_debut_fin_secondaire": "01/09/2025 - indef",
+    "groupe": 6
+  },
+  {
+    "id": 5,
+    "nom": "Paillard",
+    "prenom": "Mathieu",
+    "adresse_principale": "290 rue du village Villeneuve Sous Pymont",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "31 Aout 2025 - indef",
+    "date_debut_fin_secondaire": "2017 - indef",
+    "groupe": 6
+  },
+  {
+    "id": 6,
+    "nom": "Agnus",
+    "prenom": "Tristan",
+    "adresse_principale": "7 rue des Hyarus 70200 Lomont",
+    "adresse_secondaire": "aucune",
+    "date_debut_fin_principale": "25/04/2015 - à maintenant",
+    "date_debut_fin_secondaire": "",
+    "groupe": 6
+  },
+  {
+    "id": 7,
+    "nom": "Boubaker",
+    "prenom": "Aimine",
+    "adresse_principale": "37 rue georges clemenceau (Montbéliard) 25200",
+    "adresse_secondaire": "42 grande rue vitreux (Vitreux) 39350",
+    "date_debut_fin_principale": "31 Aout 2025 - indef",
+    "date_debut_fin_secondaire": "2013 - indef",
+    "groupe": 7
+  },
+  {
+    "id": 8,
+    "nom": "Defix",
+    "prenom": "Matthieu",
+    "adresse_principale": "2 impasse des Sources, 39570 Montmorot",
+    "adresse_secondaire": "55b route d'Audincourt, 25200 Montbéliard",
+    "date_debut_fin_principale": "31 Aout 2025 - indef",
+    "date_debut_fin_secondaire": "2014 - indef",
+    "groupe": 7
+  },
+  {
+    "id": 9,
+    "nom": "Sarioglu",
+    "prenom": "Enes",
+    "adresse_principale": "8 rue du caporal rebel, Essert 90850",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "2017 - indef",
+    "date_debut_fin_secondaire": "",
+    "groupe": 10
+  },
+  {
+    "id": 10,
+    "nom": "Parent",
+    "prenom": "Amaury",
+    "adresse_principale": "10 bis rue du lomont pierrefontaine-les-blamont",
+    "adresse_secondaire": "13 boulevard sainte marguerite Nice",
+    "date_debut_fin_principale": "2009 - à maintenant",
+    "date_debut_fin_secondaire": "2020 - à maintenant",
+    "groupe": 10
+  },
+  {
+    "id": 11,
+    "nom": "Saoud",
+    "prenom": "Nohame",
+    "adresse_principale": "30 rue Commandant Prince, Chatenois-Les-Forges",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "2009 - à maintenant",
+    "date_debut_fin_secondaire": "2020 - à maintenant",
+    "groupe": 10
+  },
+  {
+    "id": 12,
+    "nom": "Bassam Youssif",
+    "prenom": "Istila",
+    "adresse_principale": "20 avenue du general leclerc, sochaux",
+    "adresse_secondaire": "48b avenue de la paix, 28300, Ièves",
+    "date_debut_fin_principale": "2025 - 2028",
+    "date_debut_fin_secondaire": "20 - indef",
+    "groupe": 1
+  },
+  {
+    "id": 13,
+    "nom": "Belfarrache",
+    "prenom": "Douaa",
+    "adresse_principale": "7 rue Commandant Dufay, 90000 Belfort",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "2007 - indef",
+    "date_debut_fin_secondaire": "",
+    "groupe": 1
+  },
+  {
+    "id": 14,
+    "nom": "BenLahbib",
+    "prenom": "Yasmina",
+    "adresse_principale": "23 Rue Maurice Ravel, 25200 Montbéliard",
+    "adresse_secondaire": "23 cité vers l'avenir, 34770 Gigean",
+    "date_debut_fin_principale": "31/08/2025 - indef",
+    "date_debut_fin_secondaire": "2006 - indef",
+    "groupe": 1
+  },
+  {
+    "id": 15,
+    "nom": "El Omari",
+    "prenom": "Imrane",
+    "adresse_principale": "1 rue du bois bourgeois",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "01/09/24",
+    "date_debut_fin_secondaire": "2028",
+    "groupe": 12
+  },
+  {
+    "id": 16,
+    "nom": "Thiam",
+    "prenom": "Abdoulaye",
+    "adresse_principale": "16 rue bernard Gangloff 90000 Belfort",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "2025 - indef",
+    "date_debut_fin_secondaire": "",
+    "groupe": 12
+  },
+  {
+    "id": 17,
+    "nom": "Neffaa",
+    "prenom": "Amine",
+    "adresse_principale": "13 Rue de belfort Audincourt 25400",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "18/02/2004 - indef proprio",
+    "date_debut_fin_secondaire": "",
+    "groupe": 7
+  },
+  {
+    "id": 18,
+    "nom": "Nadrapui",
+    "prenom": "Nahil",
+    "adresse_principale": "37 rue georges clemenceau (Montbéliard) 25200",
+    "adresse_secondaire": "Marseille estaque boulevard roger chieusse 8",
+    "date_debut_fin_principale": "31 Aout 2025 - indef",
+    "date_debut_fin_secondaire": "2004 - indef",
+    "groupe": 9
+  },
+  {
+    "id": 19,
+    "nom": "Didri",
+    "prenom": "Maxime",
+    "adresse_principale": "38 bis rue de l'ecluse",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "10/08/2016 - Maintenant",
+    "date_debut_fin_secondaire": "",
+    "groupe": 9
+  },
+  {
+    "id": 20,
+    "nom": "Piguet",
+    "prenom": "Baptiste",
+    "adresse_principale": "7 Rue Pierre Jouffrou",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "2007 - indef",
+    "date_debut_fin_secondaire": "",
+    "groupe": 9
+  },
+  {
+    "id": 21,
+    "nom": "Nadi",
+    "prenom": "Wahib",
+    "adresse_principale": "1 rue des frères lumière, Valentigney",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "",
+    "date_debut_fin_secondaire": "2020 - indef",
+    "groupe": 3
+  },
+  {
+    "id": 22,
+    "nom": "Essajnani",
+    "prenom": "Farès",
+    "adresse_principale": "15 bis rue de Pezole, Valentigney",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "2017 - indef",
+    "date_debut_fin_secondaire": "",
+    "groupe": 3
+  },
+  {
+    "id": 23,
+    "nom": "Boudikane",
+    "prenom": "Walid",
+    "adresse_principale": "3 allée Paul Elie Dubois, Valentigney",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "2016 - indef",
+    "date_debut_fin_secondaire": "",
+    "groupe": 3
+  },
+  {
+    "id": 24,
+    "nom": "Emirkan",
+    "prenom": "",
+    "adresse_principale": "15 rue d'illzach Mulhouse",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "",
+    "date_debut_fin_secondaire": "",
+    "groupe": 16
+  },
+  {
+    "id": 25,
+    "nom": "Coste",
+    "prenom": "Antonin",
+    "adresse_principale": "13 rue de l'ubac digne",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "2007 - 2026",
+    "date_debut_fin_secondaire": "",
+    "groupe": 16
+  },
+  {
+    "id": 26,
+    "nom": "Bella",
+    "prenom": "Amine",
+    "adresse_principale": "13 rue du boulonnais grand charmont",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "",
+    "date_debut_fin_secondaire": "",
+    "groupe": 16
+  },
+  {
+    "id": 27,
+    "nom": "Fourret-Tabakovic",
+    "prenom": "Elvin",
+    "adresse_principale": "37 rue georges clemenceau (Montbéliard) 25200",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "2025 - 2030",
+    "date_debut_fin_secondaire": "",
+    "groupe": 2
+  },
+  {
+    "id": 28,
+    "nom": "Ben Amor",
+    "prenom": "Amani",
+    "adresse_principale": "67 rue georges clemenceau (Montbéliard) 25200",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "2025 - indef",
+    "date_debut_fin_secondaire": "",
+    "groupe": 2
+  },
+  {
+    "id": 29,
+    "nom": "Ben Amor",
+    "prenom": "Aymen",
+    "adresse_principale": "67 rue georges clemenceau (Montbéliard) 25200",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "2025 - indef",
+    "date_debut_fin_secondaire": "",
+    "groupe": 2
+  },
+  {
+    "id": 30,
+    "nom": "Omri",
+    "prenom": "Amine",
+    "adresse_principale": "Rue De Belfort (Audincourt) 25400",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "2024 - indef",
+    "date_debut_fin_secondaire": "",
+    "groupe": 13
+  },
+  {
+    "id": 31,
+    "nom": "Duval",
+    "prenom": "Zacharie",
+    "adresse_principale": "Rue du Montbart 25420",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "2025 - indef",
+    "date_debut_fin_secondaire": "",
+    "groupe": 13
+  },
+  {
+    "id": 32,
+    "nom": "Raux",
+    "prenom": "Louis",
+    "adresse_principale": "100 route d'audincourt",
+    "adresse_secondaire": "Antony",
+    "date_debut_fin_principale": "2025 - indef",
+    "date_debut_fin_secondaire": "",
+    "groupe": 13
+  },
+  {
+    "id": 33,
+    "nom": "Georges",
+    "prenom": "Ashlain",
+    "adresse_principale": "183 place d'audincourt",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "2025 - indef",
+    "date_debut_fin_secondaire": "",
+    "groupe": 14
+  },
+  {
+    "id": 34,
+    "nom": "Faye",
+    "prenom": "Cheikh",
+    "adresse_principale": "37 rue georges clemenceau (Montbéliard) 25200",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "2025 - indef",
+    "date_debut_fin_secondaire": "",
+    "groupe": 14
+  },
+  {
+    "id": 35,
+    "nom": "Koua Habib",
+    "prenom": "Yavan",
+    "adresse_principale": "33 rue jean de la fontaine, 90000 Belfort",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "2025 Aout",
+    "date_debut_fin_secondaire": "01/06/26",
+    "groupe": 14
+  },
+  {
+    "id": 36,
+    "nom": "Gavoille",
+    "prenom": "Mathéo",
+    "adresse_principale": "39 route de st germain (lantenot)",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "2009 - indef",
+    "date_debut_fin_secondaire": "",
+    "groupe": 4
+  },
+  {
+    "id": 37,
+    "nom": "El Hichami",
+    "prenom": "Amine",
+    "adresse_principale": "2 rue du poitou (vieux thann)",
+    "adresse_secondaire": "24 rue maurice ravel",
+    "date_debut_fin_principale": "2010 - indef",
+    "date_debut_fin_secondaire": "2025 - indef",
+    "groupe": 4
+  },
+  {
+    "id": 38,
+    "nom": "Bello",
+    "prenom": "Maïweil",
+    "adresse_principale": "8 bis rue des chenevières",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "2012 - indef",
+    "date_debut_fin_secondaire": "",
+    "groupe": 4
+  },
+  {
+    "id": 39,
+    "nom": "Ngoumeyou",
+    "prenom": "Roxane",
+    "adresse_principale": "2 rue de l'etuve, 25200 Montbéliard",
+    "adresse_secondaire": "96 bis cours du docteur long, 69003 Lyon",
+    "date_debut_fin_principale": "01/09/2025 - indef",
+    "date_debut_fin_secondaire": "2023 - indef",
+    "groupe": 5
+  },
+  {
+    "id": 40,
+    "nom": "Bulut",
+    "prenom": "Metin",
+    "adresse_principale": "22 rue de chatenois 25200 Bethoncourt",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "2007 - indef",
+    "date_debut_fin_secondaire": "",
+    "groupe": 5
+  },
+  {
+    "id": 41,
+    "nom": "arabe",
+    "prenom": "Remi-jong",
+    "email": "p14573449@gmail.com",
+    "lieu_naissance": "Marseille",
+    "adresse_principale": "Paris",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "",
+    "date_debut_fin_secondaire": "",
+    "groupe": 1
+  },
+  {
+    "id": 42,
+    "nom": "Gavoille",
+    "prenom": "Arif",
+    "email": "Arif.alti@gmail.com",
+    "lieu_naissance": "Alger",
+    "adresse_principale": "Lantenot",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "",
+    "date_debut_fin_secondaire": "",
+    "groupe": 69
+  },
+  {
+    "id": 43,
+    "nom": "sevrigne",
+    "prenom": "Abdoule",
+    "email": "p14573449@gmail.com",
+    "lieu_naissance": "Marseille",
+    "adresse_principale": "Anger",
+    "adresse_secondaire": "",
+    "date_debut_fin_principale": "",
+    "date_debut_fin_secondaire": "",
+    "groupe": 7
+  },
+  {
+    "nom": "Tarik",
+    "prenom": "foufou",
+    "email": "bilalstz01@gmail.com",
+    "adresse_principale": "Anger",
+    "lieu_naissance": "Marseille",
+    "groupe": "5"
+  },
+  {
+    "nom": "Tarik",
+    "prenom": "foufou",
+    "email": "bilalstz01@gmail.com",
+    "adresse_principale": "Angers",
+    "lieu_naissance": "Marseille",
+    "groupe": "5"
+  },
+  {
+    "nom": "Tarik",
+    "prenom": "foufou",
+    "email": "bilalstz01@gmail.com",
+    "adresse_principale": "Paris",
+    "lieu_naissance": "Marseille",
+    "groupe": "5"
+  },
+  {
+    "nom": "Ben",
+    "prenom": "Ten",
+    "email": "maxime25490@gmail.com",
+    "adresse_principale": "Perpignan",
+    "lieu_naissance": "Marseille",
+    "groupe": "32"
+  },
+  {
+    "nom": "Ben",
+    "prenom": "Ten",
+    "email": "maxime25490@gmail.com",
+    "adresse_principale": "Perpignan",
+    "lieu_naissance": "Marseille",
+    "groupe": "32"
+  },
+  {
+    "nom": "Ben",
+    "prenom": "Ten",
+    "email": "maxime25490@gmail.com",
+    "adresse_principale": "Perpignan",
+    "lieu_naissance": "Marseille",
+    "groupe": "32"
+  },
+  {
+    "nom": "Ben",
+    "prenom": "Ten",
+    "email": "maxime25490@gmail.com",
+    "adresse_principale": "perpignan",
+    "lieu_naissance": "Marseille",
+    "groupe": "32"
+  },
+  {
+    "nom": "Ben",
+    "prenom": "Ten",
+    "email": "maxime25490@gmail.com",
+    "adresse_principale": "Belfort",
+    "lieu_naissance": "Marseille",
+    "groupe": "32"
+  },
+  {
+    "nom": "Ben",
+    "prenom": "Ten",
+    "email": "maxime25490@gmail.com",
+    "adresse_principale": "Perpignan",
+    "lieu_naissance": "Marseille",
+    "groupe": "32"
+  },
+  {
+    "nom": "Ben",
+    "prenom": "Ten",
+    "email": "maxime25490@gmail.com",
+    "adresse_principale": "perpignan",
+    "lieu_naissance": "Marseille",
+    "groupe": "32"
+  },
+  {
+    "nom": "Ben",
+    "prenom": "Ten",
+    "email": "maxime25490@gmail.com",
+    "adresse_principale": "Belfort",
+    "lieu_naissance": "Marseille",
+    "groupe": "32"
+  },
+  {
+    "nom": "Ben",
+    "prenom": "Ten",
+    "email": "maxime25490@gmail.com",
+    "adresse_principale": "Belfort",
+    "lieu_naissance": "Marseille",
+    "groupe": "5"
+  },
+  {
+    "nom": "sss",
+    "prenom": "Abdoule",
+    "email": "p14573449@gmail.com",
+    "adresse_principale": "Anger",
+    "lieu_naissance": "Marseille",
+    "groupe": "76"
+  },
+  {
+    "nom": "sss",
+    "prenom": "Abdoule",
+    "email": "p14573449@gmail.com",
+    "adresse_principale": "Anger",
+    "lieu_naissance": "Marseille",
+    "groupe": "76"
+  },
+  {
+    "nom": "sss",
+    "prenom": "Abdoule",
+    "email": "stz908809@gmail.com",
+    "adresse_principale": "Anger",
+    "lieu_naissance": "Marseille",
+    "groupe": "76"
+  },
+  {
+    "nom": "sarim",
+    "prenom": "zared",
+    "email": "Jha@gmail.com",
+    "adresse_principale": "Anger",
+    "lieu_naissance": "Marseille",
+    "groupe": "32"
+  },
+  {
+    "nom": "sarim",
+    "prenom": "zared",
+    "email": "Jha@gmail.com",
+    "adresse_principale": "Anger",
+    "lieu_naissance": "Marseille",
+    "groupe": "4"
+  },
+  {
+    "nom": "Sarf",
+    "prenom": "Bugher",
+    "email": "stz562462@gmail.com",
+    "adresse_principale": "Paris",
+    "lieu_naissance": "Marseille",
+    "groupe": "2"
+  },
+  {
+    "nom": "Back",
+    "prenom": "after",
+    "email": "nagistz90@gmail.com",
+    "adresse_principale": "Paris",
+    "lieu_naissance": "Marseille",
+    "groupe": "1"
+  },
+  {
+    "nom": "Bouhout",
+    "prenom": "Bilal",
+    "email": "bilal.bouhout@edu.univ-fcomte.fr",
+    "adresse_principale": "Paris",
+    "lieu_naissance": "Marseille",
+    "groupe": "12"
+  }
+]

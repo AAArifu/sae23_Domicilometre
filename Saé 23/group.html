@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group – Domicilometer BUT N&T</title>
+  <link rel="stylesheet" href="home.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding-top: 90px;
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("ressources/Image-home.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .zone-groupe {
+      display: flex;
+      justify-content: center;
+      margin: 30px auto 10px;
+    }
+    .barre-groupe {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(105,140,190,0.95);
+      border: 2px solid #1f1f1f;
+      border-radius: 35px;
+      padding: 0 22px;
+      height: 58px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .barre-groupe label {
+      color: white;
+      font-size: 19px;
+      font-weight: bold;
+      font-style: italic;
+      white-space: nowrap;
+    }
+    .barre-groupe input {
+      width: 90px;
+      border: none;
+      background: transparent;
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      text-align: center;
+      outline: none;
+    }
+    .barre-groupe input::placeholder { color: rgba(255,255,255,0.65); }
+    .barre-groupe button {
+      border: none;
+      background: transparent;
+      font-size: 26px;
+      cursor: pointer;
+    }
+    #titre-groupe {
+      text-align: center;
+      color: white;
+      font-size: 26px;
+      font-weight: bold;
+      font-style: italic;
+      margin: 20px 0 10px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+    #liste-membres {
+      width: 94%;
+      max-width: 1150px;
+      margin: 0 auto 50px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+      justify-content: center;
+    }
+    .carte-membre {
+      background: rgba(120,155,205,0.88);
+      border-radius: 18px;
+      padding: 20px 22px;
+      width: 320px;
+      color: white;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+    }
+    .carte-membre h3 {
+      font-size: 19px;
+      margin-bottom: 12px;
+      border-bottom: 2px solid rgba(255,255,255,0.5);
+      padding-bottom: 6px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+    .info-ligne {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 5px;
+      font-size: 14px;
+      gap: 4px;
+    }
+    .info-label { font-weight: bold; color: #ddeeff; min-width: 130px; }
+    .info-valeur { color: #f0f0f0; }
+    .section-titre {
+      font-size: 13px;
+      font-weight: bold;
+      color: #c8dff8;
+      margin: 12px 0 5px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .rs-bloc {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(255,255,255,0.3);
+    }
+    #message {
+      text-align: center;
+      color: #ffdddd;
+      font-size: 20px;
+      font-style: italic;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="logo">
+      <img src="ressources/umlp-logo.png" alt="Logo">
+    </div>
+    <div class="right-menu">
+      <div id="burger-menu" class="burger-menu">
+        <a href="home-en.html">Home</a>
+        <a href="Register.html">Register</a>
+        <a href="reshearch.html">Search</a>
+        <a href="group.html">Group</a>
+        <div class="langue">
+          <a href="group-fr.html" class="flag-btn"><img src="/ressources/france.jpg" alt="French"></a>
+          <a href="group.html"  class="flag-btn"><img src="/ressources/englais.png" alt="English"></a>
+        </div>
+      </div>
+      <div class="menu" onclick="toggleMenu()">&#9776;</div>
+    </div>
+  </header>
+
+  <div class="zone-groupe">
+    <div class="barre-groupe">
+      <label for="input-groupe">Group n°</label>
+      <input type="number" id="input-groupe" placeholder="e.g. 3" min="1">
+      <button id="btn-groupe">🔍</button>
+    </div>
+  </div>
+
+  <div id="titre-groupe"></div>
+  <div id="message"></div>
+  <div id="liste-membres"></div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("burger-menu").classList.toggle("show");
+    }
+
+    async function rechercherGroupe() {
+      const id    = document.getElementById("input-groupe").value.trim();
+      const titre = document.getElementById("titre-groupe");
+      const msg   = document.getElementById("message");
+      const liste = document.getElementById("liste-membres");
+
+      titre.textContent = "";
+      msg.textContent   = "";
+      liste.innerHTML   = "";
+
+      if (!id) { msg.textContent = "Please enter a group number."; return; }
+      msg.textContent = "Loading…";
+
+      try {
+        const resp = await fetch(`http://localhost:3000/api/groupe/${encodeURIComponent(id)}`);
+
+        if (resp.status === 404) { msg.textContent = `No students found in group ${id}.`; return; }
+        if (!resp.ok) { msg.textContent = "Server error."; return; }
+
+        const data = await resp.json();
+        msg.textContent = "";
+        titre.textContent = `Group ${data.groupe} — ${data.total} student(s)`;
+
+        data.membres.forEach(m => {
+          const rp = m.residence_principale;
+          const rs = m.residence_secondaire;
+          const carte = document.createElement("div");
+          carte.className = "carte-membre";
+
+          let html = `
+            <h3>${m.prenom} ${m.nom}</h3>
+            <div class="section-titre">Personal Information</div>
+            <div class="info-ligne"><span class="info-label">Email:</span><span class="info-valeur">${m.email}</span></div>
+            <div class="info-ligne"><span class="info-label">Place of birth:</span><span class="info-valeur">${m.lieu_naissance}</span></div>
+            <div class="info-ligne"><span class="info-label">Group:</span><span class="info-valeur">${m.groupe}</span></div>
+
+            <div class="section-titre">Main Residence</div>
+            <div class="info-ligne"><span class="info-label">City:</span><span class="info-valeur">${rp.ville}</span></div>
+            <div class="info-ligne"><span class="info-label">Postal code:</span><span class="info-valeur">${rp.code_postal}</span></div>
+            <div class="info-ligne"><span class="info-label">Department:</span><span class="info-valeur">${rp.departement}</span></div>
+            <div class="info-ligne"><span class="info-label">Country:</span><span class="info-valeur">${rp.pays}</span></div>
+            <div class="info-ligne"><span class="info-label">Population:</span><span class="info-valeur">${rp.population}</span></div>
+            <div class="info-ligne"><span class="info-label">Density:</span><span class="info-valeur">${rp.densite} inh/km²</span></div>
+            <div class="info-ligne"><span class="info-label">Area:</span><span class="info-valeur">${rp.surface} km²</span></div>
+            <div class="info-ligne"><span class="info-label">Longitude:</span><span class="info-valeur">${rp.longitude ?? '-'}</span></div>
+            <div class="info-ligne"><span class="info-label">Latitude:</span><span class="info-valeur">${rp.latitude ?? '-'}</span></div>
+            <div class="info-ligne"><span class="info-label">Min altitude:</span><span class="info-valeur">${rp.altitude_min} m</span></div>
+            <div class="info-ligne"><span class="info-label">Max altitude:</span><span class="info-valeur">${rp.altitude_max} m</span></div>
+          `;
+
+          if (rs) {
+            html += `
+              <div class="rs-bloc">
+                <div class="section-titre">Secondary Residence</div>
+                <div class="info-ligne"><span class="info-label">City:</span><span class="info-valeur">${rs.ville}</span></div>
+                <div class="info-ligne"><span class="info-label">Postal code:</span><span class="info-valeur">${rs.code_postal}</span></div>
+                <div class="info-ligne"><span class="info-label">Department:</span><span class="info-valeur">${rs.departement}</span></div>
+              </div>
+            `;
+          }
+
+          carte.innerHTML = html;
+          liste.appendChild(carte);
+        });
+
+      } catch (err) {
+        msg.textContent = "Cannot reach the server.";
+        console.error(err);
+      }
+    }
+
+    document.getElementById("btn-groupe").addEventListener("click", rechercherGroupe);
+    document.getElementById("input-groupe").addEventListener("keydown", e => {
+      if (e.key === "Enter") rechercherGroupe();
+    });
+
+    const params = new URLSearchParams(window.location.search);
+    const groupeURL = params.get("groupe");
+    if (groupeURL) {
+      document.getElementById("input-groupe").value = groupeURL;
+      rechercherGroupe();
+    }
+  </script>
+
+</body>
+</html>
