@@ -35,3 +35,11 @@ Formation : Une présentation des fonctionnalités pour apprendre aux collaborat
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 video demonstration : https://drive.google.com/file/d/1Np49DJndUrMU2OVbX7QRtww2gsku3d1N/view?usp=sharing
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+canva de la conception du site : https://canva.link/vfhoq0ynpaegiyv
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Modele Conceptuel des Données :
+<img width="1236" height="593" alt="image" src="https://github.com/user-attachments/assets/63fbbca4-adbd-493c-b865-375375932246" />
